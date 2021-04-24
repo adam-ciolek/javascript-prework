@@ -35,10 +35,8 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'nozyczki') {
-    printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'kamien') {
-    printMessage('Wygrywasz!');
+  } else if (argPlayerMove == 'nozyczki' && argComputerMove == 'papier') {
+    printMessage('Wygrywasz!'); 
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis');
   } else {
@@ -48,7 +46,7 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 console.log('wybór ruchu gracza to: ' + playerInput);
-
+playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
@@ -64,7 +62,6 @@ var argButtonName, buttonTest;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  playerMove = argButtonName;
 }
 buttonTest = document.getElementById('button-rock');
 buttonTest.addEventListener('click', function(){ buttonClicked('kamień'); });
