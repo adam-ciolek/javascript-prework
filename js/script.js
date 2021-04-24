@@ -54,7 +54,7 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
-var argButtonName, buttonTest;
+var argButtonName;
 
 /**
  * Describe this function...
