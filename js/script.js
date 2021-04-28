@@ -1,6 +1,6 @@
 
 //Gra
-var argButtonName,buttonRock,buttonPaper,buttonScissors;
+let argButtonName,buttonRock,buttonPaper,buttonScissors;
 
 
 buttonRock = document.getElementById('button-rock');
@@ -27,7 +27,7 @@ displayResult(playerMove, computerMove);
 
 
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, item, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove, computerMove, item, playerInput, playerMove, randomNumber;
 
 /**
  * Describe this function...
