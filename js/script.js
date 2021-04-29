@@ -67,7 +67,5 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 
 buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
-
 buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
-
 buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
