@@ -27,7 +27,7 @@ displayResult(playerMove, computerMove);
 
 
 
-let argComputerMove, argMoveId, argPlayerMove, computerMove, item, playerInput, playerMove, randomNumber;
+
 
 /**
  * Describe this function...
@@ -39,7 +39,7 @@ function getMoveName(argMoveId) {
   } else if (argMoveId == 2) {
     return 'papier';
   } else if (argMoveId == 3) {
-    return 'nozyce';
+    return 'nożyce';
   } else {
     printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
     return 'kamień';
@@ -53,8 +53,10 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'nozyczki' && argComputerMove == 'papier') {
-    printMessage('Wygrywasz!'); 
+  } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
+    printMessage('Wygrywasz!');
+  } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
+    printMessage('Wygrywasz!');  
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis');
   } else {
@@ -66,6 +68,6 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 
 
-buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
