@@ -11,7 +11,9 @@ const buttonScissors = document.getElementById('button-scissors');
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  const playerMove = argButtonName; const randomNumber = Math.floor(Math.random() * 3 + 1); const computerMove = getMoveName(randomNumber);
+  const playerMove = argButtonName 
+  const randomNumber = Math.floor(Math.random() * 3 + 1) 
+  const computerMove = getMoveName(randomNumber);
 //console.log('wybór ruchu gracza to: ' + playerInput);
   console.log('ruch gracza to: ' + playerMove);
   console.log('wylosowana liczba to: ' + randomNumber);
